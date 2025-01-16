@@ -6,10 +6,10 @@ import cors from "cors";
 const app = express();
 
 const corsOptions = {
-    origin: 'http://localhost:3000', // Remove trailing slash
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow necessary HTTP methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers
-    optionsSuccessStatus: 200 // For legacy browsers
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    optionsSuccessStatus: 200
 };
 
 app.use(cors(corsOptions))
